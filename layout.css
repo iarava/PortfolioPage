@@ -1,0 +1,118 @@
+.img-portfolio{
+    max-width: 100%
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(0px, 0.4fr) max-Content 10fr minmax(0px, 0.4fr);
+  grid-template-rows: auto max-content max-content auto;
+  grid-gap: 5px 20px;
+  grid-template-areas:
+    "home home home home"
+    ". navArea portfolio-page ."
+    ". navArea about-page ."
+    "footer footer footer footer";
+}
+
+.navArea { grid-area: navArea; }
+.footer { grid-area: footer; }
+
+.home { 
+    grid-area: home;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.portfolio-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto max-content max-content;
+  grid-gap: 10px 10px;
+  grid-template-areas:
+    "portfolio-header portfolio-header portfolio-header"
+    "portfolio1 portfolio2 portfolio3"
+    "portfolio4 portfolio5 portfolio6";
+  grid-area: portfolio-page;
+}
+    .portfolio-header { grid-area: portfolio-header; }
+    .portfolio1 { grid-area: portfolio1; }
+    .portfolio2 { grid-area: portfolio2; }
+    .portfolio3 { grid-area: portfolio3; }
+    .portfolio4 { grid-area: portfolio4; }
+    .portfolio5 { grid-area: portfolio5; }
+    .portfolio6 { grid-area: portfolio6; }
+
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-rows: auto max-content;
+  grid-template-areas:
+    ". about-header ."
+    ". About-Body .";
+    grid-area: about-page; 
+}
+    .about-header { grid-area: about-header; }
+    .About-Body { grid-area: About-Body; }
+
+@media only screen and (max-width: 992px) {
+    
+    .grid-container {
+      grid-template-rows: auto max-content max-content auto;
+      grid-template-areas:
+        "home home home home"
+        ". navArea portfolio-page ."
+        ". navArea about-page ."
+        "footer footer footer .";
+    }
+    
+      .portfolio-page {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto max-content max-content max-content;
+      grid-template-areas:
+        "portfolio-header portfolio-header"
+        "portfolio1 portfolio2"
+        "portfolio3 portfolio4"
+        "portfolio5 portfolio6";
+    }
+    
+    .about-page {
+      grid-template-columns: 1fr 8fr 1fr;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto max-content max-content;
+        grid-template-areas:
+        "home"
+        "navArea"
+        "portfolio-page"
+        "about-page";
+    }
+    
+      .portfolio-page {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto max-content max-content max-content max-content max-content max-content;
+          grid-template-areas:
+            "portfolio-header"
+            "portfolio1"
+            "portfolio2"
+            "portfolio3"
+            "portfolio4"
+            "portfolio5"
+            "portfolio6";
+    }
+    
+    .about-page {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto max-content;
+      grid-template-areas:
+        "about-header"
+        "About-Body";
+    }
+}
+
+

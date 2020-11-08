@@ -1,17 +1,13 @@
-.img-portfolio{
-    max-width: 100%
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: minmax(0px, 0.4fr) max-Content 10fr minmax(0px, 0.4fr);
-  grid-template-rows: auto max-content max-content auto;
-  grid-gap: 5px 20px;
+  grid-template-rows: 1fr max-content max-content auto;
+  grid-gap: 10px 10px;
   grid-template-areas:
     "home home home home"
     ". navArea portfolio-page ."
     ". navArea about-page ."
-    "footer footer footer footer";
+    ". . footer .";
 }
 
 .navArea { grid-area: navArea; }
@@ -25,22 +21,32 @@
 
 .portfolio-page {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto max-content max-content;
-  grid-gap: 10px 10px;
+  grid-template-columns: 5px 1fr 1fr 1fr 5px;
+  grid-template-rows: auto max-content max-content 5px;
+  grid-gap: 20px 20px;
   grid-template-areas:
-    "portfolio-header portfolio-header portfolio-header"
-    "portfolio1 portfolio2 portfolio3"
-    "portfolio4 portfolio5 portfolio6";
+    ". portfolio-header portfolio-header portfolio-header ."
+    ". portfolio_1 portfolio_2 portfolio_3 ."
+    ". portfolio_4 portfolio_5 portfolio_6 ."
+    ". . . . .";
   grid-area: portfolio-page;
 }
     .portfolio-header { grid-area: portfolio-header; }
-    .portfolio1 { grid-area: portfolio1; }
-    .portfolio2 { grid-area: portfolio2; }
-    .portfolio3 { grid-area: portfolio3; }
-    .portfolio4 { grid-area: portfolio4; }
-    .portfolio5 { grid-area: portfolio5; }
-    .portfolio6 { grid-area: portfolio6; }
+    .portfolio_1 { grid-area: portfolio_1; }
+    .portfolio_2 { grid-area: portfolio_2; }
+    .portfolio_3 { grid-area: portfolio_3; }
+    .portfolio_4 { grid-area: portfolio_4; }
+    .portfolio_5 { grid-area: portfolio_5; }
+    .portfolio_6 { grid-area: portfolio_6; }
+
+[class*=portfolio_]{
+    display: grid;
+  grid-template-columns: 0.25fr 10fr 0.25fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". description .";
+}
+    .description { grid-area: description; }
 
 .about-page {
   display: grid;
@@ -57,22 +63,23 @@
 @media only screen and (max-width: 992px) {
     
     .grid-container {
-      grid-template-rows: auto max-content max-content auto;
+      grid-template-rows: 1fr max-content max-content auto;
       grid-template-areas:
         "home home home home"
         ". navArea portfolio-page ."
         ". navArea about-page ."
-        "footer footer footer .";
+        ". . footer .";
     }
     
       .portfolio-page {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto max-content max-content max-content;
+      grid-template-columns: 5px 1fr 1fr 5px;
+      grid-template-rows: auto max-content max-content max-content 1px;
       grid-template-areas:
-        "portfolio-header portfolio-header"
-        "portfolio1 portfolio2"
-        "portfolio3 portfolio4"
-        "portfolio5 portfolio6";
+        ". portfolio-header portfolio-header ."
+        ". portfolio_1 portfolio_2 ."
+        ". portfolio_3 portfolio_4 ."
+        ". portfolio_5 portfolio_6 ."
+        ". . . .";
     }
     
     .about-page {
@@ -85,33 +92,35 @@
     
     .grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto max-content max-content;
+        grid-template-rows: 1fr auto max-content max-content auto;
         grid-template-areas:
         "home"
         "navArea"
         "portfolio-page"
-        "about-page";
+        "about-page"
+        "footer";
     }
     
       .portfolio-page {
-          grid-template-columns: 1fr;
-          grid-template-rows: auto max-content max-content max-content max-content max-content max-content;
+          grid-template-columns: 5px 1fr 5px ;
+          grid-template-rows: auto max-content max-content max-content max-content max-content max-content 1px;
           grid-template-areas:
-            "portfolio-header"
-            "portfolio1"
-            "portfolio2"
-            "portfolio3"
-            "portfolio4"
-            "portfolio5"
-            "portfolio6";
+            ". portfolio-header ."
+            ". portfolio_1 ."
+            ". portfolio_2 ."
+            ". portfolio_3 ."
+            ". portfolio_4 ."
+            ". portfolio_5 ."
+            ". portfolio_6 ."
+            ". . .";
     }
     
     .about-page {
-      grid-template-columns: 1fr;
+      grid-template-columns: 0.25fr 10fr 0.25fr;
       grid-template-rows: auto max-content;
       grid-template-areas:
-        "about-header"
-        "About-Body";
+        ". about-header ."
+        ". About-Body .";
     }
 }
 

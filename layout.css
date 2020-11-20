@@ -1,16 +1,16 @@
 .grid-container {
   display: grid;
-  grid-template-columns: minmax(0px, 0.4fr) max-Content 10fr minmax(0px, 0.4fr);
+  grid-template-columns: minmax(0px, 0.4fr) max-content 10fr minmax(0px, 0.4fr);
   grid-template-rows: 1fr max-content max-content auto;
   grid-gap: 10px 10px;
   grid-template-areas:
     "home home home home"
     ". navArea portfolio-page ."
     ". navArea about-page ."
-    ". . footer .";
+    ". footer footer .";
 }
 
-.navArea { grid-area: navArea; }
+.navArea { grid-area: navArea;}
 .footer { grid-area: footer; }
 
 .home { 
@@ -74,7 +74,7 @@
         "home home home home"
         ". navArea portfolio-page ."
         ". navArea about-page ."
-        ". . footer .";
+        ". footer footer .";
     }
     
       .portfolio-page {

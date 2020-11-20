@@ -8,8 +8,48 @@ h1, h2, h3, .center-text{
 
 .mainColor{ background-color: #191919; }
 
-.portfolio-page, .about-page {
+.portfolio-page, .about-page, .navArea{
     background-color: #343434;
+}
+
+.footer{
+    background-color: #808080;
+}
+
+.footer p{
+    color: #D4D4D4;
+}
+
+.navArea ul {   
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.navArea li{
+  text-align: center;  
+  border-bottom: 2px solid #404040;
+}
+
+.navArea li a {
+  display: block;
+  color: #C4C4C4;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navArea li a:hover {
+  background-color: #404040;
+}
+
+.navArea li a:active{
+  background-color: #343434;
 }
 
 [class*="portfolio_"] {
@@ -45,4 +85,39 @@ h1, h2, h3, .center-text{
     margin: 5px 0px 5px 5px;
     padding: 5px 10px 5px 10px;
     border-radius: 8em;
+}
+
+@media only screen and (max-width: 600px){     
+
+    .navArea{
+        background-color: #000000;
+    }
+    
+    .navArea{
+        overflow: visible;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+    }
+    
+    .navArea div, .navArea ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navArea ul{
+        justify-content: space-between;
+    }
+    
+    .navArea li{
+        border-bottom: none;
+    }
+    
+    .navArea #ulHome li{
+        border-right: 2px solid #404040;
+    }
+    
+    .navArea #ulContent li{
+        border-left: 2px solid #404040;
+    }
 }

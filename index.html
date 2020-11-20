@@ -3,6 +3,7 @@
 
 <head>
     <title>Luca Rava</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
 </head>
@@ -10,13 +11,20 @@
 <body class="mainColor">
 <div class="grid-container">
 <!-- Navbar/Menu -->
-    <div class="navArea">
-        <p>Navbar</p>
-        <nav></nav>
-    </div>
+    <nav class="navArea">
+        <ul>
+            <div id="ulHome">
+                <li><a href="#home">Home</a></li>
+            </div>
+            <div id="ulContent">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>            
+            </div>
+        </ul>
+    </nav>
     
     <!-- Home -->
-    <div class="home">
+    <div id="home" class="home">
         <div>
             <h1>I'm Luca Rava</h1>
             <p class="center-text">I'm a programmer with experience in CG, GameDev and AI.</p>
@@ -24,9 +32,8 @@
         </div>        
     </div>
     
-    
     <!-- Portfolio-Page -->
-    <div class="portfolio-page">
+    <div id="portfolio" class="portfolio-page">
         <div class="portfolio-header">
             <h2>My Portfolio</h2>
         </div>
@@ -54,16 +61,6 @@
             <img class="img-portfolio" src="images/img-placeholder.png">
             <p class="textfield">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             <div class="label-container">
-                <div class="label-skills">Unity</div>
-                <div class="label-skills">C#</div>
-                <div class="label-skills">Unity</div>
-                <div class="label-skills">C#</div>
-                <div class="label-skills">Unity</div>
-                <div class="label-skills">C#</div>
-                <div class="label-skills">Unity</div>
-                <div class="label-skills">C#</div>
-                <div class="label-skills">Unity</div>
-                <div class="label-skills">C#</div>
                 <div class="label-skills">Unity</div>
                 <div class="label-skills">C#</div>
             </div>
@@ -119,7 +116,7 @@
     
     
     <!-- About-Page -->
-    <div class="about-page">
+    <div id="about" class="about-page">
         <div class="about-header">
             <h2>About Me</h2>
         </div>
@@ -131,7 +128,9 @@
     </div>
     
     <!-- Footer -->
-    <div class="footer"><p>Footer</p></div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
 </div>    
 </body>
 

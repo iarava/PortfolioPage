@@ -8,19 +8,19 @@ h1, h2, h3, .center-text{
 
 .mainColor{ background-color: #191919; }
 
-.portfolio-page, .about-page, .navArea{
+.portfolio-page, .about-page, nav{
     background-color: #343434;
 }
 
-.footer{
+footer{
     background-color: #808080;
 }
 
-.footer p{
+footer p{
     color: #D4D4D4;
 }
 
-.navArea ul {   
+nav ul {   
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -32,23 +32,23 @@ h1, h2, h3, .center-text{
   top: 0;
 }
 
-.navArea li{
+nav li{
   text-align: center;  
   border-bottom: 2px solid #404040;
 }
 
-.navArea li a {
+nav li a {
   display: block;
   color: #C4C4C4;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.navArea li a:hover {
+nav li a:hover {
   background-color: #404040;
 }
 
-.navArea li a:active{
+nav li a:active{
   background-color: #343434;
 }
 
@@ -89,35 +89,35 @@ h1, h2, h3, .center-text{
 
 @media only screen and (max-width: 600px){     
 
-    .navArea{
+    nav{
         background-color: #000000;
     }
     
-    .navArea{
+    nav{
         overflow: visible;
         position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 0;
     }
     
-    .navArea div, .navArea ul{
+    nav div, nav ul{
         display: flex;
         flex-direction: row;
     }
     
-    .navArea ul{
+    nav ul{
         justify-content: space-between;
     }
     
-    .navArea li{
+    nav li{
         border-bottom: none;
     }
     
-    .navArea #ulHome li{
+    nav #ulHome li{
         border-right: 2px solid #404040;
     }
     
-    .navArea #ulContent li{
+    nav #ulContent li{
         border-left: 2px solid #404040;
     }
 }

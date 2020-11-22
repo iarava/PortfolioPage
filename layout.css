@@ -49,9 +49,9 @@ header {
   grid-template-columns: 0.25fr 10fr 0.25fr;
   grid-template-rows: auto;
   grid-template-areas:
-    ". description .";
+    ". portfolio-content .";
 }
-    .description { grid-area: description; }
+    .portfolio-content { grid-area: portfolio-content; }
 
 .about-page {
   display: grid;

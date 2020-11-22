@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 h1, h2, h3, p, a{  color: #B4B4B4; }
 
 h1, h2, h3, .center-text{ 
@@ -74,8 +79,12 @@ header{
     justify-content: space-between;
 }
 
-header a:hover, header p:hover{
-    color: #D4D4D4;
+header i{
+    margin-bottom: 7px
+}
+
+header a:hover{
+    color: #E4E4E4;
 }
 
 #info{
@@ -115,6 +124,10 @@ header a:hover, header p:hover{
                 -1px -1px 30px rgba(0,0,0,0.2);
 }
 
+.portfolio-content div{
+    margin: 10px 0px 5px 0px
+}
+
 .textfield{
     background-color: #505050;
     border-radius: 3px;
@@ -140,6 +153,37 @@ header a:hover, header p:hover{
     margin: 5px 0px 5px 5px;
     padding: 5px 10px 5px 10px;
     border-radius: 8em;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button{
+    background-color: #5E5E5E;
+    background-image: linear-gradient(#5E5E5E, #3C3C3C);
+    padding: 3px 8px;
+    margin-left: 50px;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 7px;
+    border: 1px solid #606060;    
+    border-bottom: 1px solid #535353;    
+}
+
+.button:hover{
+    background-image: linear-gradient(#6E6E6E, #4C4C4C);    
+}
+
+.button:active{
+    background-image: linear-gradient(#505050, #303030);
+    border: 1px solid #595959;    
+    border-bottom: 1px solid #505050;     
+}
+
+.button i{
+    margin-right: 8px;
 }
 
 @media only screen and (max-width: 600px){     

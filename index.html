@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="slideshow.css">
     <script src="https://kit.fontawesome.com/397eef8f6b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -46,14 +47,37 @@
         <div class="portfolio-header">
             <h2>My Portfolio</h2>
         </div>
-        <div class="portfolio_1">
+        <div id="portfolio_1" class="portfolio_1">
           <div class="portfolio-content">
             <h3>Preprocessing of 3D-City-Modells for VR</h3>
             <div class="label-container">
                 <div class="label-topic">CG</div>
             </div>
             <div class="showcase">
-                <img class="img-portfolio" src="images/img-placeholder.png">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img class="img-portfolio" src="images/img-placeholder.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img class="img-portfolio" src="images/img-placeholder.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img class="img-portfolio" src="images/img-placeholder.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide1(1)"></span> 
+                  <span class="dot" onclick="currentSlide1(2)"></span> 
+                  <span class="dot" onclick="currentSlide1(3)"></span> 
+                </div>
             </div>
             <div class="description">
                 <p>Goal</p>
@@ -69,14 +93,40 @@
             </div>
           </div>
         </div>
-        <div class="portfolio_2">
+        <div id="portfolio_2" class="portfolio_2">
           <div class="portfolio-content">
             <h3>Recommender Game</h3>
             <div class="label-container">
                 <div class="label-topic">GameDev</div>
                 <div class="label-topic">GameDes</div>
             </div>
-            <img class="img-portfolio" src="images/img-placeholder.png">
+            
+            <div class="showcase">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img class="img-portfolio" src="images/img-placeholder.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img class="img-portfolio" src="images/img-placeholder.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img class="img-portfolio" src="images/img-placeholder.png">
+                      <div class="text">Caption Text</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+                </div>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide2(1)"></span> 
+                  <span class="dot" onclick="currentSlide2(2)"></span> 
+                  <span class="dot" onclick="currentSlide2(3)"></span> 
+                </div>
+            </div>
             <p class="textfield">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
             <div class="label-container">
                 <div class="label-skills">Unity</div>
@@ -152,7 +202,9 @@
             <a href="https://www.github.com/iarava" target="_blank"><i class="fab fa-github fa-lg"></i></a>
         </div>        
     </footer>
-</div>    
+</div>
+        
+<script src="slideshow.js"></script>
 </body>
 
 </html>

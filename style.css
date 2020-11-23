@@ -40,6 +40,10 @@ footer a:hover{
     color: #E4E4E4;    
 }
 
+nav{
+    z-index: 1;
+}
+
 nav ul {   
   display: flex;
   flex-direction: column;

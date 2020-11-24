@@ -128,8 +128,13 @@ header a:hover{
                 -1px -1px 30px rgba(0,0,0,0.2);
 }
 
-.portfolio-content div{
-    margin: 10px 0px 5px 0px
+.portfolio-content{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.label-container, .showcase, .description{
+    margin: 10px 0px 5px 0px;
 }
 
 .textfield{
@@ -162,6 +167,8 @@ header a:hover{
 .buttons-container{
     display: flex;
     justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: 5px;
 }
 
 .button{

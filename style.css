@@ -13,7 +13,7 @@ a{
     text-decoration: none;
 }
 
-.img-portfolio{ max-width: 100% }
+.img-portfolio{ width: 100% }
 
 .mainColor{ background-color: #191919; }
 
@@ -105,7 +105,7 @@ header a:hover{
 
 #linksPages div{
     text-align: center;
-    margin: 0px 25px 0px 25px;
+    margin: 0px 25px;
     padding: 5px 15px;
 }
 

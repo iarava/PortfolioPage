@@ -1,0 +1,31 @@
+h1{
+    font-family: Impact, "Arial Black", Gadget sans-serif;
+}
+
+h2, h3, h4{
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+a{
+    font-family: 'Candal', sans-serif;
+}
+
+.portfolio-content, .About-Body{
+    font-family: 'Share Tech', monospace;   
+    font-size: 15px;
+}
+
+.label {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.button{
+    font-family: 'Share Tech', sans-serif; 
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 992px){ 
+}
+
+@media only screen and (max-width: 600px){ 
+}

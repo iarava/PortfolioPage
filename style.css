@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-h1, h2, h3, p, a{  color: #B4B4B4; }
+h1, h2, h3, h4, p, a{  color: #B4B4B4; }
 
-h1, h2, h3, .center-text{ 
+h1, h2, h3, h4, .center-text{ 
     text-align: center;
 }
 
@@ -26,7 +26,6 @@ footer{
 }
 
 footer div{
-    margin: 5px;
     display: flex;
     justify-content: center;
 }
@@ -65,7 +64,6 @@ nav li a {
   display: block;
   color: #C4C4C4;
   padding: 14px 16px;
-    text-decoration: none;
 }
 
 nav li a:hover {
@@ -83,20 +81,16 @@ header{
     justify-content: space-between;
 }
 
-header i{
-    margin-bottom: 7px
-}
-
 header a:hover{
     color: #E4E4E4;
 }
 
 #info{
-    margin-top: 15em;
+    margin-top: 20vh;
 }
 
 #linksSocials{
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 #linksSocials a{
@@ -106,18 +100,13 @@ header a:hover{
 #linksPages{
     display: flex;
     flex-direction: row;
-    margin-bottom: 12em;
+    margin-bottom: 20vh;
 }
 
 #linksPages div{
     text-align: center;
     margin: 0px 25px 0px 25px;
     padding: 5px 15px;
-}
-
-#linksPages p{
-    padding: 0px;
-    margin: 5px;
 }
 
 [class*="portfolio_"] {
@@ -144,24 +133,22 @@ header a:hover{
     padding: 5px 7px 5px 7px;
 }
 
-.label-topic{
-    flex-basis: 90px;
+.label{
     text-align: center;
     color: #E4E4E4;
     background-color: #C35BB3;
-    margin: 10px 5px 10px 5px;
-    padding: 3px;
-    border-radius: 8em;
+    padding: 3px 10px;
+    border-radius: 8em;    
+}
+
+.label-topic{
+    flex-basis: 90px;
+    margin: 10px 10px 10px 0px;
 }
 
 .label-skills{
     flex-basis: 40px;
-    text-align: center;
-    color: #E4E4E4;
-    background-color: #C35BB3;
-    margin: 5px 0px 5px 5px;
-    padding: 5px 10px 5px 10px;
-    border-radius: 8em;
+    margin: 5px 5px 5px 0px;
 }
 
 .buttons-container{
@@ -183,17 +170,19 @@ header a:hover{
 }
 
 .button:hover{
+    background-color: #6E6E6E;
     background-image: linear-gradient(#6E6E6E, #4C4C4C);    
 }
 
 .button:active{
+    background-color: #505050;
     background-image: linear-gradient(#505050, #303030);
     border: 1px solid #595959;    
     border-bottom: 1px solid #505050;     
 }
 
 .button i{
-    margin-right: 8px;
+    margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 600px){     

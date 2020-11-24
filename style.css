@@ -166,7 +166,7 @@ header a:hover{
 
 .buttons-container{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-top: auto;
     margin-bottom: 5px;
 }
@@ -175,7 +175,6 @@ header a:hover{
     background-color: #5E5E5E;
     background-image: linear-gradient(#5E5E5E, #3C3C3C);
     padding: 3px 8px;
-    margin-left: 50px;
     min-width: 80px;
     text-align: center;
     border-radius: 7px;

@@ -1,3 +1,19 @@
+header, footer, .button, h4{
+    font-size: 120%;
+}
+
+h3{
+    font-size: 150%;
+}
+
+p, .label-topic, .showcase{
+    font-size: 110%;
+}
+
+nav, .label-skills{
+    font-size: 100%;
+}
+
 h1{
     font-family: Impact, "Arial Black", Gadget sans-serif;
 }
@@ -24,8 +40,84 @@ a{
     font-weight: bold;
 }
 
-@media only screen and (max-width: 992px){ 
+@media only screen and (min-width: 1940px){    
+    header, footer{
+        font-size: 1vw;
+    }
+        
+    h3{
+        font-size: 330%;
+    }
+    
+    h4{
+        font-size: 310%;
+    }
+    
+    .label-topic, .button{
+        font-size: 230%;
+    }
+    
+    p, .showcase{
+        font-size: 225%;
+    }
+    
+    nav{
+        font-size: 200%;
+    }
+    
+    .label-skills{
+        font-size: 180%;
+    }
 }
 
-@media only screen and (max-width: 600px){ 
+@media only screen and (max-width: 992px){    
+    header, footer{
+        font-size: 90%;
+    }
+        
+    h3{
+        font-size: 130%;
+    }
+    
+    h4{
+        font-size: 110%;
+    }
+    
+    .label-topic, .button{
+        font-size: 100%;
+    }
+    
+    p, .showcase{
+        font-size: 95%;
+    }
+    
+    nav, .label-skills{
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){     
+    header, footer{
+        font-size: 70%;
+    }
+        
+    h3{
+        font-size: 110%;
+    }
+    
+    h4{
+        font-size: 100%;
+    }
+    
+    .label-topic, .button{
+        font-size: 80%;
+    }
+    
+    p, .showcase{
+        font-size: 75%;
+    }
+    
+    nav, .label-skills{
+        font-size: 60%;
+    }
 }

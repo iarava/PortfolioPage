@@ -19,10 +19,12 @@ a{
 
 .portfolio-page, .about-page, nav{
     background-color: #343434;
+    border-radius: 2px;
 }
 
 footer{    
     background-color: #808080;
+    border-radius: 2px;
 }
 
 footer div{
@@ -32,7 +34,7 @@ footer div{
 
 footer a{
     color: #D4D4D4;
-    margin: 10px 15px;
+    margin: 7px 15px;
 }
 
 footer a:hover{
@@ -56,14 +58,14 @@ nav ul {
 }
 
 nav li{
-  text-align: center;  
+  text-align: center;
   border-bottom: 2px solid #404040;
 }
 
 nav li a {
   display: block;
   color: #C4C4C4;
-  padding: 14px 16px;
+  padding: 15px 15px;
 }
 
 nav li a:hover {
@@ -94,7 +96,7 @@ header a:hover{
 }
 
 #linksSocials a{
-    margin: 0px 5px;
+    margin: 0px 12px;
 }
 
 #linksPages{
@@ -106,7 +108,7 @@ header a:hover{
 #linksPages div{
     text-align: center;
     margin: 0px 25px;
-    padding: 5px 15px;
+    padding: 0px 15px;
 }
 
 [class*="portfolio_"] {
@@ -138,16 +140,16 @@ header a:hover{
     color: #E4E4E4;
     background-color: #C35BB3;
     padding: 3px 10px;
-    border-radius: 8em;    
+    border-radius: 50px;    
 }
 
 .label-topic{
-    flex-basis: 90px;
+    flex-basis: 7em;
     margin: 10px 10px 10px 0px;
 }
 
 .label-skills{
-    flex-basis: 40px;
+    flex-basis: 4em;
     margin: 5px 5px 5px 0px;
 }
 
@@ -155,14 +157,15 @@ header a:hover{
     display: flex;
     justify-content: space-around;
     margin-top: auto;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .button{
     background-color: #5E5E5E;
     background-image: linear-gradient(#5E5E5E, #3C3C3C);
     padding: 3px 8px;
-    min-width: 80px;
+    margin-top: 10px;
+    min-width: 5em;
     text-align: center;
     border-radius: 7px;
     border: 1px solid #606060;    
@@ -185,15 +188,92 @@ header a:hover{
     margin-right: 0.5em;
 }
 
-@media only screen and (max-width: 600px){     
-
-    nav{
-        background-color: #000000;
+@media only screen and (min-width: 1940px){
+    .portfolio-page, .about-page, nav, footer{
+        border-radius: 4px;
     }
     
+    footer a{
+        margin: 14px 30px;
+    }
+    
+    nav li a {
+        padding: 30px 30px;
+    }
+    
+    [class*="portfolio_"] {
+        border-radius: 14px;    
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.5),
+                    20px 20px 30px rgba(0,0,0,0.5),
+                    -2px -2px 60px rgba(0,0,0,0.2);
+    }
+    
+    .label-container, .showcase, .description{
+        margin: 20px 0px 10px 0px;
+    }
+    
+    .textfield{
+        border-radius: 6px;
+        box-shadow: inset 4px 4px 4px rgba(0,0,0,0.5);
+        padding: 10px 14px 10px 14px;
+    }
+    
+    .label{
+        padding: 6px 20px;  
+    }
+
+    .label-topic{
+        margin: 20px 20px 20px 0px;
+    }
+
+    .label-skills{
+        margin: 10px 10px 10px 0px;
+    }
+    
+    .button-container{  
+        margin-bottom: 16px;
+    }
+    
+    .button{
+        padding: 6px 16px;
+        margin-top: 20px;
+        border-radius: 14px;
+    }
+}
+
+@media only screen and (max-width: 992px){ 
+    
+    footer a{
+        margin: 5px 10px;
+    }
+    
+    .label-container, .showcase, .description{
+        margin: 6px 0px 3px 0px;
+    }
+
+    .label-topic{
+        margin: 6px 6px 6px 0px;
+    }
+
+    .label-skills{
+        margin: 3px 3px 3px 0px;
+    }
+    
+    .button-container{  
+        margin-bottom: 5px;
+    }
+    
+    .button{
+        margin-top: 6px;
+    }
+}
+
+@media only screen and (max-width: 600px){          
+    
     nav{
+        background-color: #000000;
         overflow: visible;
-        position: -webkit-sticky; /* Safari */
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
     }

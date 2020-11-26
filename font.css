@@ -1,9 +1,13 @@
-header, footer, .button, h4{
+header, footer, .button{
     font-size: 120%;
 }
 
 h3{
     font-size: 150%;
+}
+
+h4{
+    font-size: 135%;
 }
 
 p, .label-topic, .showcase{

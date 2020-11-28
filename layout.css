@@ -61,7 +61,7 @@ header {
 
 .about-page {
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto max-content;
   grid-template-areas:
     ". about-header ."
@@ -86,6 +86,10 @@ header {
         grid-template-columns: 10px 1fr 1fr 1fr 10px;
         grid-template-rows: auto max-content max-content 10px;
         grid-gap: 40px 40px;
+    }
+    
+    .about-page{
+        grid-template-columns: 1fr 6fr 1fr;
     }
     
     .label-container {  

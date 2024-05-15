@@ -2,6 +2,7 @@ h1, h2, h3, h4, p, a{  color: #B4B4B4; }
 
 h1, h2, h3, h4, .center-text{ 
     text-align: center;
+    margin-bottom: 20px
 }
 
 h3{
@@ -92,6 +93,7 @@ header a:hover{
 
 #info{
     margin-top: 20vh;
+    max-width: min(740px, 90vw);
 }
 
 #linksSocials{

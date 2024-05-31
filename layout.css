@@ -32,12 +32,13 @@ header {
 .portfolio-page {
   display: grid;
   grid-template-columns: 5px 1fr 1fr 1fr 5px;
-  grid-template-rows: auto max-content max-content 5px;
+  grid-template-rows: auto max-content max-content max-content 5px;
   grid-gap: 20px 20px;
   grid-template-areas:
     ". portfolio-header portfolio-header portfolio-header ."
     ". portfolio_1 portfolio_2 portfolio_3 ."
     ". portfolio_4 portfolio_5 portfolio_6 ."
+    ". portfolio_7 portfolio_8 . ."
     ". . . . .";
   grid-area: portfolio-page;
   scroll-margin-top: 1em;
@@ -49,6 +50,8 @@ header {
     .portfolio_4 { grid-area: portfolio_4; }
     .portfolio_5 { grid-area: portfolio_5; }
     .portfolio_6 { grid-area: portfolio_6; }
+    .portfolio_7 { grid-area: portfolio_7; }
+    .portfolio_8 { grid-area: portfolio_8; }
 
 [class*=portfolio_]{
     display: grid;
@@ -110,12 +113,13 @@ header {
     
       .portfolio-page {
       grid-template-columns: 5px 1fr 1fr 5px;
-      grid-template-rows: auto max-content max-content max-content 1px;
+      grid-template-rows: auto max-content max-content max-content max-content 1px;
       grid-template-areas:
         ". portfolio-header portfolio-header ."
         ". portfolio_1 portfolio_2 ."
         ". portfolio_3 portfolio_4 ."
         ". portfolio_5 portfolio_6 ."
+        ". portfolio_7 portfolio_8 ."
         ". . . .";
     }
     
@@ -144,7 +148,7 @@ header {
     
       .portfolio-page {
           grid-template-columns: 5px 1fr 5px ;
-          grid-template-rows: auto max-content max-content max-content max-content max-content max-content 1px;
+          grid-template-rows: auto max-content max-content max-content max-content max-content max-content max-content max-content 1px;
           grid-template-areas:
             ". portfolio-header ."
             ". portfolio_1 ."
@@ -153,6 +157,8 @@ header {
             ". portfolio_4 ."
             ". portfolio_5 ."
             ". portfolio_6 ."
+            ". portfolio_7 ."
+            ". portfolio_8 ."
             ". . .";
     }
     

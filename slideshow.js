@@ -38,5 +38,5 @@ function showSlides(n, portfolioNr) {
   }
   var index = slideIndex[portfolioNr-1];
   slides[index-1].style.display = "block";  
-  dots[index-1].className += " active";
+  if (n > slides.length) dots[index-1].className += " active";
 }

@@ -27,16 +27,22 @@ function showSlides(n, portfolioNr) {
   var i;
   var portfolioId = "portfolio_" + portfolioNr;
   var slides = document.getElementById(portfolioId).getElementsByClassName("mySlides");
+    
+  if(slides.length <= 1){
+      slides[0].style.display = "block";
+      return;
+  }
+   
+  var index =  (slideIndex[portfolioNr-1] - 1) % slides.length; 
   var dots = document.getElementById(portfolioId).getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex[portfolioNr-1] = 1}    
-  if (n < 1) {slideIndex[portfolioNr-1] = slides.length}
+  //if (n > slides.length) {slideIndex[portfolioNr-1] = 1}    
+  //if (n < 1) {slideIndex[portfolioNr-1] = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  var index = slideIndex[portfolioNr-1];
-  slides[index-1].style.display = "block";  
-  if (n > slides.length) dots[index-1].className += " active";
+  slides[index].style.display = "block";  
+  dots[index].classList.add("active");
 }

@@ -3,6 +3,7 @@
 
 <head>
     <title>Luca Rava</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
@@ -31,10 +32,9 @@
     <!-- Home -->
     <header id="home">
         <div id="info">
-            <h1>I'm Luca M. Rava</h1>
+            <h1>I'm Luca Rava</h1>
             <h2>
-                Passionate SW developer with experience in CG, GameDev and AI - 
-                loves to develop supporting tools and visual apps
+                Passionate SW Developer with experience in CG, GameDev, and AI - enthusiastic about developing supporting tools and visual apps
             </h2>
             <div id="linksSocials" class="center-text">
                 <a href="https://www.linkedin.com/in/rava-luca" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
@@ -111,6 +111,44 @@
         </div>
         <div id="portfolio_2" class="portfolio_2">
           <div class="portfolio-content">
+            <h4>Space-Shooter</h4>
+            <div class="label-container">
+                <div class="label label-topic">Game</div>
+            </div>            
+            <div class="showcase">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img class="img-portfolio" src="images/portfolio_spaceshooter/1_game.jpeg">
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <p class="subtitle">Info</p>
+                <p class="textfield">
+                    This is a little game which is created from the tutorial of the book "C++ für Spieleprogrammierer" after learning the concepts of C++. The game is build with the SDL2 library. Because this is an old version of the book, I needed to refactor the code from SDL to SDL2.<br>
+                    You have control over a space ship with the arrow keys and you can shoot asteroids with spacebar.<br>
+                    The project can be setup with premake5
+                </p>
+                <p class="subtitle">Challenges</p>
+                <p class="textfield">
+                    - Refactor code from SDL to SDL2<br>
+                    - Use premake5 to setup and build the project
+                </p>
+            </div>     
+            <div class="label-container">                
+                <div class="label label-skills">GameDev</div> 
+                <div class="label label-skills">C++</div> 
+                <div class="label label-skills">SDL2</div>
+                <div class="label label-skills">Premake</div> 
+            </div>
+            <div class="buttons-container">  
+                <a class="button" href="https://github.com/iarava/Space-Shooter" target="_blank"><i class="fab fa-github"></i>Code</a>             
+                <div></div>
+            </div>
+          </div>
+        </div>
+        <div id="portfolio_3" class="portfolio_3">
+          <div class="portfolio-content">
             <h4>Recommender Game</h4>
             <div class="label-container">
                 <div class="label label-topic">Game</div>
@@ -136,15 +174,15 @@
                       <img class="img-portfolio" src="images/portfolio_recommender/5_finalPrototype.JPG">
 
                     </div>
-                    <a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1,3)">&#10095;</a>
                 </div>
                 <div class="center-text">
-                  <span class="dot" onclick="currentSlide(1,2)"></span> 
-                  <span class="dot" onclick="currentSlide(2,2)"></span> 
-                  <span class="dot" onclick="currentSlide(3,2)"></span> 
-                  <span class="dot" onclick="currentSlide(4,2)"></span> 
-                  <span class="dot" onclick="currentSlide(5,2)"></span> 
+                  <span class="dot" onclick="currentSlide(1,3)"></span> 
+                  <span class="dot" onclick="currentSlide(2,3)"></span> 
+                  <span class="dot" onclick="currentSlide(3,3)"></span> 
+                  <span class="dot" onclick="currentSlide(4,3)"></span> 
+                  <span class="dot" onclick="currentSlide(5,3)"></span> 
                 </div>
             </div>
             <div class="description">
@@ -182,7 +220,7 @@
             </div>
           </div>
         </div>
-        <div id="portfolio_3" class="portfolio_3">
+        <div id="portfolio_4" class="portfolio_4">
           <div class="portfolio-content">
             <h4>GGJ 20 - Find Your Way</h4>
             <div class="label-container">
@@ -202,13 +240,13 @@
                       <img class="img-portfolio" src="images/portfolio_ggj20/3_active_gameplay.jpg">
 
                     </div>
-                    <a class="prev" onclick="plusSlides(-1,3)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1,3)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1,4)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1,4)">&#10095;</a>
                 </div>
                 <div class="center-text">
-                  <span class="dot" onclick="currentSlide(1,3)"></span> 
-                  <span class="dot" onclick="currentSlide(2,3)"></span> 
-                  <span class="dot" onclick="currentSlide(3,3)"></span> 
+                  <span class="dot" onclick="currentSlide(1,4)"></span> 
+                  <span class="dot" onclick="currentSlide(2,4)"></span> 
+                  <span class="dot" onclick="currentSlide(3,4)"></span> 
                 </div>
             </div>
             <div class="description">
@@ -235,44 +273,6 @@
             <div class="buttons-container">
                 <a class="button" href="https://github.com/iarava/GGJ20-FindYourWay" target="_blank"><i class="fab fa-github"></i>Code</a>
                 <a class="button" href="https://v3.globalgamejam.org/2020/games/find-your-way-4" target="_blank"><i class="fas fa-play"></i>Demo</a>
-            </div>
-          </div>
-        </div>
-        <div id="portfolio_4" class="portfolio_4">
-          <div class="portfolio-content">
-            <h4>Space-Shooter</h4>
-            <div class="label-container">
-                <div class="label label-topic">Game</div>
-            </div>            
-            <div class="showcase">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                      <img class="img-portfolio" src="images/portfolio_spaceshooter/1_game.jpeg">
-                    </div>
-                </div>
-            </div>
-            <div class="description">
-                <p class="subtitle">Info</p>
-                <p class="textfield">
-                    This is a little game which is created from the tutorial of the book "C++ für Spieleprogrammierer" after learning the concepts of C++. The game is build with the SDL2 library. Because this is an old version of the book, I needed to refactor the code from SDL to SDL2.<br>
-                    You have control over a space ship with the arrow keys and you can shoot asteroids with spacebar.<br>
-                    The project can be setup with premake5
-                </p>
-                <p class="subtitle">Challenges</p>
-                <p class="textfield">
-                    - Refactor code from SDL to SDL2<br>
-                    - Use premake5 to setup and build the project
-                </p>
-            </div>     
-            <div class="label-container">                
-                <div class="label label-skills">GameDev</div> 
-                <div class="label label-skills">C++</div> 
-                <div class="label label-skills">SDL2</div>
-                <div class="label label-skills">Premake</div> 
-            </div>
-            <div class="buttons-container">                
-                <div></div>
-                <a class="button" href="https://github.com/iarava/Space-Shooter" target="_blank"><i class="fab fa-github"></i>Code</a>
             </div>
           </div>
         </div>
@@ -329,62 +329,49 @@
             </div>
           </div>
         </div>
-        <div id="portfolio_6" class="portfolio_6">          
+        <div id="portfolio_6" class="portfolio_6">
           <div class="portfolio-content">
-            <h4>Overcome</h4>
+            <h4>Hugo</h4>
             <div class="label-container">
-                <div class="label label-topic">Design</div>
-            </div>           
+                <div class="label label-topic">Programming</div>
+            </div>
+                        
             <div class="showcase">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                      <img class="img-portfolio" src="images/portfolio_overcome/1_cover.jpg">
-
+                <img class="img-portfolio" src="images/portfolio_hugo/1_cover.jpg">
                     </div>
-                    <div class="mySlides fade">
-                      <img class="img-portfolio" src="images/portfolio_overcome/2_drawing.jpg">
-
-                    </div>
-                    <div class="mySlides fade">
-                      <img class="img-portfolio" src="images/portfolio_overcome/3_coloring.png">
-
-                    </div>
-                    <div class="mySlides fade">
-                      <img class="img-portfolio" src="images/portfolio_overcome/4_composing.jpg">
-
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1,6)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1,6)">&#10095;</a>
-                </div>
-                <div class="center-text">
-                  <span class="dot" onclick="currentSlide(1,6)"></span> 
-                  <span class="dot" onclick="currentSlide(2,6)"></span> 
-                  <span class="dot" onclick="currentSlide(3,6)"></span>  
-                  <span class="dot" onclick="currentSlide(4,6)"></span> 
                 </div>
             </div>
             <div class="description">
                 <p class="subtitle">Info</p>
                 <p class="textfield">
-                    In a two weeks workshop, we had to create a short animation video. First, we got introduced to different drawing principles. I started with the principle "Squash &amp; Stretch". I took this exercise and draw more scenes from there. After one week of drawing the frames, I start with the composing in TVPaint. I corrected my drawings, added the scenes together, and colored each frame. On the last day, we added sound effects with Cubase.
+                    In the course ROBLAB, we had the goal to implement an AI-behavior with Pepper as an agent according to PEAS. We developed a "Goal-based Agent" with the game "Hugo". Pepper needs to identify the number of opponents and ask for the number of orders to play. He has to recognize the mistakes of the opponents.
                 </p>
                 <p class="subtitle">Challenges</p>
                 <p class="textfield">
-                    - 30s video as minimum<br>
-                    - Drawing scenes per hands<br>
-                    - Composing of scenes<br>
-                    - Adding sound effects
+                    - Playing Hugo<br>
+                    - Find out the number of opponents<br>
+                    - Recognize mistakes of opponents
                 </p>
-            </div> 
-            <div class="label-container">                
-                <div class="label label-skills">Animation</div>
-                <div class="label label-skills">Stop-Motion</div>   
-                <div class="label label-skills">TVPaint</div>             
+                <p class="subtitle">My Responsibility</p>
+                <p class="textfield">
+                    - Co-developed main logic<br>
+                    - Movement of head<br>
+                    - Taking and combining pictures<br>
+                    - Sound localization (not used)
+                </p>   
+            </div>          
+            <div class="label-container">
+                <div class="label label-skills">AI</div>
+                <div class="label label-skills">Robotics</div>
+                <div class="label label-skills">Computer Vision</div>
+                <div class="label label-skills">Python</div>
             </div>
             <div class="buttons-container">
-                <div></div>
-                <a class="button" href="https://youtu.be/C9bGnz7bPc8" target="_blank"><i class="fas fa-play"></i>Demo</a>
-            </div>           
+                <a class="button" href="https://github.com/iarava/HSLU-ROBLAB-Hugo" target="_blank"><i class="fab fa-github"></i>Code</a>
+                <a class="button" href="https://youtu.be/Oi8PoD9xZL8" target="_blank"><i class="fas fa-play"></i>Demo</a>
+            </div>
           </div>
         </div>
         <div id="portfolio_7" class="portfolio_7">          
@@ -441,46 +428,62 @@
             </div>
           </div>
         </div>
-        <div id="portfolio_8" class="portfolio_8">
+        <div id="portfolio_8" class="portfolio_8">          
           <div class="portfolio-content">
-            <h4>Hugo</h4>
+            <h4>Overcome</h4>
             <div class="label-container">
-                <div class="label label-topic">Programming</div>
-            </div>          
+                <div class="label label-topic">Design</div>
+            </div>           
             <div class="showcase">
-                <img class="img-portfolio" src="images/portfolio_hugo/1_cover.jpg">
                 <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <img class="img-portfolio" src="images/portfolio_overcome/1_cover.jpg">
+
+                    </div>
+                    <div class="mySlides fade">
+                      <img class="img-portfolio" src="images/portfolio_overcome/2_drawing.jpg">
+
+                    </div>
+                    <div class="mySlides fade">
+                      <img class="img-portfolio" src="images/portfolio_overcome/3_coloring.png">
+
+                    </div>
+                    <div class="mySlides fade">
+                      <img class="img-portfolio" src="images/portfolio_overcome/4_composing.jpg">
+
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1,8)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1,8)">&#10095;</a>
+                </div>
+                <div class="center-text">
+                  <span class="dot" onclick="currentSlide(1,8)"></span> 
+                  <span class="dot" onclick="currentSlide(2,8)"></span> 
+                  <span class="dot" onclick="currentSlide(3,8)"></span>  
+                  <span class="dot" onclick="currentSlide(4,8)"></span> 
                 </div>
             </div>
             <div class="description">
                 <p class="subtitle">Info</p>
                 <p class="textfield">
-                    In the course ROBLAB, we had the goal to implement an AI-behavior with Pepper as an agent according to PEAS. We developed a "Goal-based Agent" with the game "Hugo". Pepper needs to identify the number of opponents and ask for the number of orders to play. He has to recognize the mistakes of the opponents.
+                    In a two weeks workshop, we had to create a short animation video. First, we got introduced to different drawing principles. I started with the principle "Squash &amp; Stretch". I took this exercise and draw more scenes from there. After one week of drawing the frames, I start with the composing in TVPaint. I corrected my drawings, added the scenes together, and colored each frame. On the last day, we added sound effects with Cubase.
                 </p>
                 <p class="subtitle">Challenges</p>
                 <p class="textfield">
-                    - Playing Hugo<br>
-                    - Find out the number of opponents<br>
-                    - Recognize mistakes of opponents
+                    - 30s video as minimum<br>
+                    - Drawing scenes per hands<br>
+                    - Composing of scenes<br>
+                    - Adding sound effects
                 </p>
-                <p class="subtitle">My Responsibility</p>
-                <p class="textfield">
-                    - Co-developed main logic<br>
-                    - Movement of head<br>
-                    - Taking and combining pictures<br>
-                    - Sound localization (not used)
-                </p>   
-            </div>          
-            <div class="label-container">
-                <div class="label label-skills">AI</div>
-                <div class="label label-skills">Robotics</div>
-                <div class="label label-skills">Computer Vision</div>
-                <div class="label label-skills">Python</div>
+            </div> 
+            <div class="label-container">                
+                <div class="label label-skills">Animation</div>
+                <div class="label label-skills">Stop-Motion</div>   
+                <div class="label label-skills">TVPaint</div>             
             </div>
             <div class="buttons-container">
-                <a class="button" href="https://github.com/iarava/HSLU-ROBLAB-Hugo" target="_blank"><i class="fab fa-github"></i>Code</a>
-                <a class="button" href="https://youtu.be/Oi8PoD9xZL8" target="_blank"><i class="fas fa-play"></i>Demo</a>
-            </div>
+                <div></div>
+                <a class="button" href="https://youtu.be/C9bGnz7bPc8" target="_blank"><i class="fas fa-play"></i>Demo</a>
+            </div>           
           </div>
         </div>
     </section>

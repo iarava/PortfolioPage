@@ -9,8 +9,7 @@ function init() {
     var countPortfolios = document.getElementsByClassName("portfolio-content").length; 
     slideIndex = new Int8Array(countPortfolios);
     for(i = 1; i <= countPortfolios; i++){
-        slideIndex[i-1] = 1;
-        console.log(slideIndex);  
+        slideIndex[i-1] = 1;  
         showSlides(slideIndex[i-1], i);
     }  
 }
@@ -35,8 +34,6 @@ function showSlides(n, portfolioNr) {
    
   var index =  (slideIndex[portfolioNr-1] - 1) % slides.length; 
   var dots = document.getElementById(portfolioId).getElementsByClassName("dot");
-  //if (n > slides.length) {slideIndex[portfolioNr-1] = 1}    
-  //if (n < 1) {slideIndex[portfolioNr-1] = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
